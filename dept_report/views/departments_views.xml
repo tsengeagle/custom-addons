@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record id="departments_view_tree" model="ir.ui.view">
+            <field name="name">Departments List</field>
+            <field name="model">dept_report.department</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="costNo"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="departments_view_form" model="ir.ui.view">
+            <field name="name">Departments Form</field>
+            <field name="model">dept_report.department</field>
+            <field name="arch" type="xml">
+                <form>
+                    <label for="name" string="部門名稱"/>
+                    <field name="name"/>
+                    <label for="name" string="成本中心代碼"/>
+                    <field name="costNo"/>
+                    <label for="name" string="備註"/>
+                    <field name="comment"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="departments_actions_list" model="ir.actions.act_window">
+            <field name="name">Department List</field>
+            <field name="res_model">dept_report.department</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <menuitem id="departments_list" name="Departments list" action="departments_actions_list"/>
+    </data>
+</odoo>
