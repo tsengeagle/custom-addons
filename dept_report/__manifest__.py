@@ -10,14 +10,14 @@
         透過成本分攤，得到部門損益狀況報表
     """,
 
-    'author': "tsengeagle@tzuchi medical foundation",
+    'author': "tsengeagle",
     'website': "http://www.tzuchi.com.tw",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Accounting',
-    'version': '0.3',
+    'version': '0.4',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -33,4 +33,6 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'installable': True,
+    'application': True,
 }
