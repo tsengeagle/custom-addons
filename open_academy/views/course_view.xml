@@ -1,0 +1,57 @@
+<odoo>
+    <data>
+        <record id="course_view_list" model="ir.ui.view">
+            <field name="name">Course List</field>
+            <field name="model">open_academy.course</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="course_view_form" model="ir.ui.view">
+            <field name="name">Course Form</field>
+            <field name="model">open_academy.course</field>
+            <field name="arch" type="xml">
+                <form string="課程資訊">
+                    <header>
+                        <button string="確認" type="object" name="action_confirm" class="oe_highlight"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="課程描述">
+                                <field name="description"/>
+                            </page>
+                            <page string="關於">
+                                about this course...
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="course_search_view" model="ir.ui.view">
+            <field name="name">Course Search</field>
+            <field name="model">open_academy.course</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="course_action_list" model="ir.actions.act_window">
+            <field name="name">Course List Action</field>
+            <field name="res_model">open_academy.course</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="course_menu_list" name="Course List" action="course_action_list"/>
+    </data>
+</odoo>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "OpenAcademy",
+    'name': "Open Academy",
 
     'summary': """
         練習模組""",
@@ -24,10 +24,12 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
+        'views/course_view.xml',
+        'views/session_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-    'application':True,
+    'application': True,
 }
