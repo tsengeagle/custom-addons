@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="section_statment.list">
+      <field name="name">SectionStatment list</field>
+      <field name="model">section_statment.section_statment</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="section_statment.action_window">
+      <field name="name">SectionStatment window</field>
+      <field name="res_model">section_statment.section_statment</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="section_statment.action_server">
+      <field name="name">SectionStatment server</field>
+      <field name="model_id" ref="model_section_statment_section_statment"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="SectionStatment" id="section_statment.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="section_statment.menu_1" parent="section_statment.menu_root"/>
+    <menuitem name="Menu 2" id="section_statment.menu_2" parent="section_statment.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="section_statment.menu_1_list" parent="section_statment.menu_1"
+              action="section_statment.action_window"/>
+    <menuitem name="Server to list" id="section_statment" parent="section_statment.menu_2"
+              action="section_statment.action_server"/>
+    -->
+  </data>
+</odoo>
