@@ -7,7 +7,6 @@
         """,
 
     'description': """
-
     """,
 
     'author': "tsengeagle",
@@ -27,10 +26,11 @@
         # 'security/ir.model.access.csv',
         'views/templates.xml',
         'views/department_view.xml',
+        'views/accounting_subject_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-    'application':True,
+    'application': True,
 }

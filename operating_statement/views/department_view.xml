@@ -2,7 +2,7 @@
     <data>
         <!-- View -->
         <record id="department_view_tree" model="ir.ui.view">
-            <field name="name">Department tree view</field>
+            <field name="name">Department list</field>
             <field name="model">operating_statement.department</field>
             <field name="arch" type="xml">
                 <tree>
@@ -21,6 +21,6 @@
         </record>
 
         <!-- Menu item -->
-        <menuitem id="department_menu_list" name="Department List" action="department_action_list"/>
+        <menuitem id="department_menu_list" name="Department list" action="department_action_list"/>
     </data>
 </odoo>
