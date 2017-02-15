@@ -26,6 +26,7 @@
         # 'security/ir.model.access.csv',
         'views/course_view.xml',
         'views/session_view.xml',
+        'views/todo_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
