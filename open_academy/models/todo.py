@@ -10,3 +10,7 @@ class Todo(models.Model):
     description = fields.Text('description', size=100)
     is_done = fields.Boolean('Done?', default=False)
     is_active = fields.Boolean('Active?', default=True)
+
+    def do_toggle_done(self):
+        self.is_done = not self.is_done
+        return True

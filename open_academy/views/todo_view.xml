@@ -1,7 +1,8 @@
 <odoo>
     <data>
+        <!-- view的定義 -->
         <record id="todo_view_list" model="ir.ui.view">
-            <field name="name">todo_view_list</field>
+            <field name="name">todo_list</field>
             <field name="model">open_academy.todo</field>
             <field name="arch" type="xml">
                 <tree>
@@ -11,10 +12,15 @@
         </record>
 
         <record id="todo_view_form" model="ir.ui.view">
-            <field name="name">todo_view_form</field>
+            <field name="name">todo_form</field>
             <field name="model">open_academy.todo</field>
             <field name="arch" type="xml">
                 <form>
+                    <header>
+                        test
+                        <button name="do_toggle_done" type="object" string="Toggle done!" class="oe_highlight"/>
+
+                    </header>
                     <group>
                         <field name="name"/>
                         <field name="is_done"/>
@@ -25,12 +31,15 @@
             </field>
         </record>
 
+        <!-- action的定義 -->
         <record id="todo_action_list" model="ir.actions.act_window">
-            <field name="name">todo_action_list</field>
+            <field name="name">待辦事項</field><!--這邊的name會顯示在view-->
             <field name="res_model">open_academy.todo</field>
             <field name="view_mode">tree,form</field>
         </record>
 
+        <!-- 選單 -->
         <menuitem id="todo_menu_list" name="Todo List" action="todo_action_list"/>
+
     </data>
 </odoo>
