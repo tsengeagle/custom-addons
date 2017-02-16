@@ -10,5 +10,5 @@ class AccountingSubject(models.Model):
     account_id = fields.Char('會計科目代碼', size=6)
     entries_id = fields.Char('分戶代碼', size=10)
     entries_name = fields.Char('分戶名稱', size=40)
-    db_cr = fields.Selection(selection='DB,CR', string='借貸', size=2)
+    db_cr = fields.Selection(selection=[('DB', '借方'), ('CR', '貸方')], string='借貸', size=2)
     account_type = fields.Char(string='類別', size=10)
