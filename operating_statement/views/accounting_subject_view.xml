@@ -1,7 +1,7 @@
 <odoo>
     <data>
-        <record id="accounting_subject_view_tree" model="ir.ui.view">
-            <field name="name">Accounting subject list</field>
+        <record id="accounting_subject_view_list" model="ir.ui.view">
+            <field name="name">accounting_subject_view_list</field>
             <field name="model">operating_statement.accounting_subject</field>
             <field name="arch" type="xml">
                 <tree>
@@ -11,12 +11,32 @@
             </field>
         </record>
 
+        <record id="accounting_subject_view_form" model="ir.ui.view">
+            <field name="name">accounting_subject_view_form</field>
+            <field name="model">operating_statement.accounting_subject</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="account_id"/>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="entries_id"/>
+                            <field name="entries_name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
         <record id="accounting_subject_action_list" model="ir.actions.act_window">
-            <field name="name">Accounting subject list action</field>
+            <field name="name">會計科目設定</field>
             <field name="res_model">operating_statement.accounting_subject</field>
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="accounting_subject_menu_list" name="Accounting subject list" action="accounting_subject_action_list"/>
+        <menuitem id="accounting_subject_menu_list" name="會計科目"
+                  parent="operation_statement_menu_main" action="accounting_subject_action_list"/>
     </data>
 </odoo>

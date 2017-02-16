@@ -54,6 +54,6 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="course_menu_list" name="Course List" action="course_action_list"/>
+        <menuitem id="course_menu_list" name="Course List" parent="open_academy_menu_main" action="course_action_list"/>
     </data>
 </odoo>

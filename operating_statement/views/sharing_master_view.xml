@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <record id="sharing_master_view_list" model="ir.ui.view">
+            <field name="name">sharing_master_view_list</field>
+            <field name="model">operating_statement.sharing_master</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="sequence"/>
+                    <field name="department_id"/>
+                    <field name="accounting_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="sharing_master_view_form" model="ir.ui.view">
+            <field name="name">sharing_master_view_form</field>
+            <field name="model">operating_statement.sharing_master</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="department_id"/>
+                            <field name="accounting_id"/>
+                        </group>
+                        <group>
+                            <field name="sharing_method"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="sharing_master_action_list" model="ir.actions.act_window">
+            <field name="name">分攤表設定</field>
+            <field name="res_model">operating_statement.sharing_master</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="sharing_master_menu_list" name="分攤表" parent="operation_statement_menu_main"
+                  action="sharing_master_action_list"/>
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem id="operation_statement_menu_main" name="科經營報表" />
+    </data>
+</odoo>

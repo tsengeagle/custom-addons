@@ -1,0 +1,5 @@
+<odoo>
+    <data>
+        <menuitem id="open_academy_menu_main" name="練習Lab" />
+    </data>
+</odoo>

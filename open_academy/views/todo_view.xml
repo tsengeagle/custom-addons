@@ -39,7 +39,7 @@
         </record>
 
         <!-- 選單 -->
-        <menuitem id="todo_menu_list" name="Todo List" action="todo_action_list"/>
+        <menuitem id="todo_menu_list" name="Todo List" parent="open_academy_menu_main" action="todo_action_list"/>
 
     </data>
 </odoo>
