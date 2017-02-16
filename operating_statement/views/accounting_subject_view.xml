@@ -25,6 +25,10 @@
                             <field name="entries_id"/>
                             <field name="entries_name"/>
                         </group>
+                        <group>
+                            <field name="db_cr"/>
+                            <field name="account_type"/>
+                        </group>
                     </sheet>
                 </form>
             </field>
