@@ -25,6 +25,8 @@
                             <field name="duration"/>
                             <field name="seats"/>
                         </group>
+                        <label string="選課名單"/>
+                        <field name="attendee_id_list"/>
                     </sheet>
                 </form>
             </field>
