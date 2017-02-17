@@ -1,23 +1,5 @@
 <odoo>
     <data>
-        <record id="course1" model="open_academy.course">
-            <field name="name">.Net開發</field>
-            <field name="description">test content</field>
-        </record>
-        <record id="course2" model="open_academy.course">
-            <field name="name">python入門</field>
-            <field name="description">python content</field>
-        </record>
-        <record id="course3" model="open_academy.course">
-            <field name="name">Java開發</field>
-            <field name="description">Java content
 
-            ...
-            </field>
-        </record>
-        <record id="course4" model="open_academy.course">
-            <field name="name">Odoo開發</field>
-            <field name="description">Odoo content</field>
-        </record>
     </data>
 </odoo>

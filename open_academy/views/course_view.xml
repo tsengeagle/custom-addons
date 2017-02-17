@@ -25,6 +25,13 @@
                             <field name="responsible_id"/>
                         </group>
                         <notebook>
+                            <page string="選課紀錄">
+                                <field name="session_id_list">
+                                    <tree string="關聯的選課紀錄">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
                             <page string="課程描述">
                                 <field name="description"/>
                             </page>
