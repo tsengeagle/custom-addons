@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <record id="report_interval_view_list" model="ir.ui.view">
+            <field name="name">report_interval_view_list</field>
+            <field name="model">operating_statement.report_interval</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="report_interval_view_form" model="ir.ui.view">
+            <field name="name">report_interval_view_form</field>
+            <field name="model">operating_statement.report_interval</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="name"/>
+                        <field name="start_date"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="report_interval_action_list" model="ir.actions.act_window">
+            <field name="name">報表區間列表</field>
+            <field name="res_model">operating_statement.report_interval</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="report_interval_menu_list" name="報表區間" parent="operation_statement_menu_main"
+                  action="report_interval_action_list"/>
+    </data>
+</odoo>

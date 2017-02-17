@@ -27,7 +27,8 @@
         'views/operating_statement_view.xml',
         'views/department_view.xml',
         'views/accounting_subject_view.xml',
-        'views/sharing_master_view.xml'
+        'views/sharing_master_view.xml',
+        'views/report_interval_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
